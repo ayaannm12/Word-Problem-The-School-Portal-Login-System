@@ -3,13 +3,12 @@ email = str(input("what is your email???")).strip()
 if "@" not in email:
         email == False
         print("email not valid there is no @ symbol!!")
-while email == False:
+if email == False:
         email = str(input("what is your email???")).strip()
 if "@" in email:
     print("Your email is valid, thnak you!")
     email == True
 if email == True:
-    while password == False:
                 password = str(input("what would you like your password to be??"))
                 if len(password) < 8:
                         print("password is not valid, its too short 8 characters are the minimum!")
@@ -25,6 +24,3 @@ if email == True and password == True:
         print("Username", email)
         print("password", password)
         
-        
-                
-
